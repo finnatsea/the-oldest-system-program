@@ -1,0 +1,186 @@
+%--------------------
+% Packages
+% -------------------
+\documentclass[12pt,letterpaper]{article} % Set document class to article and paper size to letter
+\usepackage{graphicx} % Required for including pictures
+\usepackage{calc} % To reset the counter in the document after title page
+\usepackage{enumitem} % Includes lists
+\usepackage[margin=1in]{geometry} % Set margins to 1 inch on all sides
+
+
+
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\microtypecontext{spacing=nonfrench} % add this line to inform microtype that nonfrenchspacing is active.
+% activate={true,nocompatibility} - activate protrusion and expansion
+% final - enable microtype; use "draft" to disable
+% tracking=true, kerning=true, spacing=true - activate these techniques
+% factor=1100 - add 10% to the protrusion amount (default is 1000)
+% stretch=10, shrink=10 - reduce stretchability/shrinkability (default is 20/20)
+
+%--------------------
+% Choose Font
+% -------------------
+
+% \usepackage{mathptmx} % Times New Roman
+% \usepackage{mathpazo} % Palatino
+% \usepackage[bitstream-charter]{mathdesign} % Charter
+% \usepackage[utopia]{mathdesign} % Utopia
+% \usepackage{tgschola} % Century Schoolbook
+% \usepackage{kpfonts} % ??
+% \usepackage{baskervald} % Baskerville-inspired
+% \usepackage{libertinus} % fork of Linux Libertine
+% \usepackage{ebgaramond} % For Garamond
+% \usepackage{gfsdidot} % For Didot
+% \usepackage{gfsbembo} % For Bembo
+
+
+% \usepackage{lmodern} % Latin Modern
+% \usepackage{fourier} % Utopia based, with Fourier maths
+% \usepackage{tgtermes} % Termes
+\usepackage{newtxtext,newtxmath} % New Times Roman with compatible math font
+% \usepackage{stix} % Times-like with math support
+% \usepackage{newcent} % New Century Schoolbook
+% \usepackage{times} % Times
+% \usepackage{gentium} % Gentium
+% \usepackage{bera} % Bera Serif
+\usepackage[ngerman]{babel}
+
+
+%-----------------------
+% Redefine \maketitle to decrease space before title
+%-----------------------
+\makeatletter
+\renewcommand\@maketitle{
+\newpage
+ \vspace*{-35\p@}% <- Modify this length to adjust the space from top
+ \begin{center}%
+  {\LARGE \@title \par}%
+ \end{center}%
+ \vskip 10\p@ % <- Modify this length to adjust the space to the first paragraph
+}
+\makeatother
+
+% Create a new command that mimics \maketitle
+\newcommand{\mytitle}[1]{%
+\newpage
+\begin{center}
+{\LARGE \textbf{\textit{#1}} \par}
+\end{center}
+\vskip 10pt
+}
+
+% Create a footnote without a number
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+%-----------------------
+% Begin document
+%-----------------------
+\begin{document}
+\pagestyle{empty} % supress page numbers
+% Define the title, author, and date
+\title{\textbf{\textit{\large The Oldest System Programme of German Idealism (1797)}}}
+\date{} % Suppress the date
+
+% Automatically format the title, author, and date
+\maketitle
+\thispagestyle{empty}
+\textit{An Ethics.} Since all metaphysics will henceforth fall into \textit{morals} -- for which Kant,
+with both of his practical postulates has given only an \textit{example} and \textit{exhausted} nothing, so this
+ethics will contain nothing other than a complete system of all ideas, or what is the same, of
+all practical postulates. The first idea is naturally the conception of \textit{myself} as an absolutely
+free being. Along with the free, self-conscious being an entire \textit{world} emerges
+simultaneously -- out of nothingness -- the only true and conceivable \textit{creation out of
+nothingness} -- Here I will descend to the fields of physics; the question is this: How should a
+world be constituted for a moral being? I should like to give our physics, progressing
+laboriously with experiments, wings again.
+
+\blfootnote{Georg Wilhelm Friedrich Hegel: Works. Volume 1, Frankfurt a. M. 1979. Translated by Diana I. Behler.}
+\blfootnote{This text refers to a fragmentary script in Hegel's handwriting, which was published in 1917 by F. Rosenzweig in the proceedings of the Heidelberg Academy of Sciences, titled and attributed to Schelling. In 1926, W. Böhm argued Hölderlin was the author. It was not until 1965 that O. Pöggeler came forward with the thesis that Hegel was the author of this fragment. Since then, scholars have debated which of the Tübingen Three – Hegel, Hölderlin, or Schelling - is the true author.}
+So whenever philosophy provides the ideas, experience the data, we can finally obtain
+physics on the whole, which I expect of later epochs. It does not seem as if present day
+physics could satisfy a creative spirit such as ours is or should be.
+
+From nature I come to \textit{man's works}. The idea of the human race first -- I want to show
+that there is no idea of the \textit{state} because the state is something \textit{mechanical}, just as little as
+there is an idea of a \textit{machine}.
+
+Only that which is the object of \textit{freedom} is called \textit{idea}. We must therefore go beyond
+the state! -- Because every state must treat free human beings like mechanical works; and it
+should not do that; therefore it should \textit{cease}. You see for yourself that here all the ideas, that
+of eternal peace, etc., are merely \textit{subordinate} ideas of a higher idea. At the same time I want
+to set forth the principles for a \textit{history a human race} here and expose the whole miserable
+human work of state, constitution, government, legislature -- down to the skin. Finally the
+ideas of a moral world, deity, immortality -- overthrow of all superstition, persecution of the priesthood, which recently poses as reason, come through itself.
+-- (The) absolute freedom of all spirits who carry the intellectual world within themselves,
+and may not seek either God or immortality \textit{outside of themselves}.
+
+Finally the idea which unites all, the idea of \textit{beauty}, the word taken in the higher
+taken in the higher platonic sense. I am convinced that the highest act of reason, which, in
+that it comprises all ideas, is an aesthetic act, and that \textit{truth and goodness} are united like
+sisters \textit{only in beauty} -- The philosopher must possess just as much aesthetic power as the
+poet. The people without aesthetic sense are our philosophers of the letter. The philosophy of 
+the spirit is an aesthetic philosophy. One cannot be clever in anything, one cannot even
+reason cleverly in history -- without aesthetic sense. It should now be revealed here what
+those people who do not understand ideas are actually lacking -- and candidly enough admit
+that everything is obscure to them as soon as one goes beyond charts and indices.
+
+Poetry thereby obtains a higher dignity; it becomes again in the end what it was in the
+beginning -- \textit{teacher of the human race}; for there is no longer any philosophy,
+any history; poetic art alone will outlive all the rest of the sciences and arts.
+
+At the same time we so often hear that the great multitude should have a \textit{sensual
+religion}. Not only the great multitude, but even philosophy needs it. Monotheism of reason
+and the heart, polytheism of the imagination and art, that is what we need!
+
+First I will speak about an idea here, which as far as I know, has never occurred to
+anyone's mind -- we must have a new mythology; this mythology must, however, stand in the
+service of ideas, it must become a mythology of \textit{reason}.
+
+Until we make ideas aesthetic, i.e., mythological, they hold no interest for the \textit{people},
+and conversely, before mythology is reasonable, the philosopher must be ashamed of it. Thus
+finally the enlightened and unenlightened must shake hands; mythology must become
+philosophical, and the people reasonable, and philosophy must become mythological in order
+to make philosophy sensual. Then external unity will reign among us. Never again the
+contemptuous glance, never the blind trembling of the people before its wise men and priests.
+Only then does \textit{equal} development of \textit{all} powers await us, of the individual as well as of all
+individuals. No power will be suppressed any longer, then general freedom and equality of
+spirits will reign -- A higher spirit sent from heaven must establish this religion among us, it
+will be the last and greatest work of the human race.
+
+
+% After your first part in English
+\newpage % Start a new page
+
+
+\mytitle{\textbf{\textit{\large Das älteste Systemprogramm des deutschen Idealismus (1797)}}}
+
+
+– \textit{eine Ethik.} Da die ganze Metaphysik künftig in die \textit{Moral} fällt – wovon Kant mit seinen beiden praktischen Postulaten nur ein \textit{Beispiel} gegeben, nichts \textit{erschöpft} hat –, so wird diese Ethik nichts anderes als ein vollständiges System aller Ideen oder, was dasselbe ist, aller praktischen Postulate sein. Die erste Idee ist natürlich die Vorstellung \textit{von mir selbst} als einem absolut freien Wesen. Mit dem freien, selbstbewussten Wesen tritt zugleich eine ganze \textit{Welt} – aus dem Nichts hervor – die einzig wahre und gedenkbare \textit{Schöpfung aus Nichts}. – Hier werde ich auf die Felder der Physik herabsteigen; die Frage ist diese: Wie muß eine Welt für ein moralisches Wesen beschaffen sein? Ich möchte unserer langsamen, an Experimenten mühsam schreitenden Physik einmal wieder Flügel geben.
+
+\blfootnote{Georg Wilhelm Friedrich Hegel: Werke. Band 1, Frankfurt a. M. 1979, S. 234-237.}
+\blfootnote{Es handelt sich bei diesem Text um eine fragmentarisch überlieferte Schrift in Hegels Handschrift, die 1917 von F. Rosenzweig in den Sitzungsberichten der Heidelberger Akademie der Wissenschaften veröffentlicht, betitelt und Schelling zugeschrieben worden ist. Nachdem W. Böhm 1926 Hölderlins Autorschaft vertreten hatte, reagierte F. Strauß 1927 mit einem Vermittlungsvorschlag. Erst 1965 trat O. Pöggeler mit der These auf, daß Hegel der Autor dieses Fragments sei. Seitdem geht der Streit zwischen der Hegel-, Hölderlin- und Schellingforschung um die adäquate Zuordnung dieses zweiseitig beschriebenen Papiers.
+}
+So, wenn die Philosophie die Ideen, die Erfahrung die Data angibt, können wir endlich die Physik im Großen bekommen, die ich von späteren Zeitaltern erwarte. Es scheint nicht, daß die jetzige Physik einen schöpferischen Geist, wie der unsrige ist oder sein soll, befriedigen könne.
+
+Von der Natur komme ich aufs \textit{Menschenwerk.} Die Idee der Menschheit voran, will ich zeigen, daß es keine Idee vom \textit{Staat} gibt, weil der Staat etwas \textit{Mechanisches} ist, so wenig als es eine Idee von einer \textit{Maschine} gibt. Nur was Gegenstand der \textit{Freiheit} ist, heißt \textit{Idee}. Wir müssen also auch über den Staat hinaus! – Denn jeder Staat muß freie Menschen als mechanisches Räderwerk behandeln; und das soll er nicht; also soll er \textit{aufhören}. Ihr seht von selbst, daß hier alle die Ideen, vom ewigen Frieden u.s.w. nur \textit{untergeordnete} Ideen einer höheren Idee sind: Zugleich will ich hier die Prinzipien für eine \textit{Geschichte der Menschheit} niederlegen und das ganze elende Menschenwerk von Staat, Verfassung, Regierung, Gesetzgebung bis auf die Haut entblößen. Endlich kommen die Ideen von einer moralischen Welt, Gottheit, Unsterblichkeit, – Umsturz alles Afterglaubens, Verfolgung des Priestertums, das neuerdings Vernunft heuchelt, durch die Vernunft selbst. – Absolute Freiheit aller Geister, die die intellektuelle Welt in sich tragen und weder Gott noch Unsterblichkeit \textit{außer sich} suchen dürfen.
+
+Zuletzt die Idee, die alle vereinigt, die Idee der \textit{Schönheit}, das Wort in höherem platonischen Sinne genommen. Ich bin nun überzeugt, daß der höchste Akt der Vernunft, der, indem sie alle Ideen umfaßt, ein ästhetischer Akt ist und daß \textit{Wahrheit und Güte nur in der Schönheit} verschwistert sind. Der Philosoph muß ebensoviel ästhetische Kraft besitzen als der Dichter. Die Menschen ohne ästhetischen Sinn sind unsere Buchstabenphilosophen. Die Philosophie des Geistes ist eine ästhetische Philosophie. Man kann in nichts geistreich sein, selbst über Geschichte kann man nicht geistreich raisonnieren – ohne ästhetischen Sinn. Hier soll offenbar werden, woran es eigentlich den Menschen fehlt, die keine Ideen verstehen – und treuherzig genug gestehen, daß ihnen alles dunkel ist, sobald es über Tabellen und Register hinausgeht.
+
+Die Poesie bekommt dadurch eine höhere Würde, sie wird am Ende wieder, was sie am Anfang war – \textit{Lehrerin der Menschheit}; denn es gibt keine Philosophie, keine Geschichte mehr, die Dichtkunst allein wird alle übrigen Wissenschaften und Künste überleben.
+
+Zu gleicher Zeit hören wir so oft, der große Haufen müsse eine \textit{sinnliche Religion} haben. Nicht nur der große Haufen, auch der Philosoph bedarf ihrer. Monotheismus der Vernunft und des Herzens, Polytheismus der Einbildungskraft und der Kunst, dies ist's, was wir bedürfen!
+
+Zuerst werde ich hier von einer Idee sprechen, die, soviel ich weiß, noch in keines Menschen Sinn gekommen ist – wir müssen eine neue Mythologie haben, diese Mythologie aber muß im Dienste der Ideen stehen, sie muß eine Mythologie der \textit{Vernunft} werden.
+
+Ehe wir die Ideen ästhetisch, d. h. mythologisch machen, haben sie für das \textit{Volk} kein Interesse; und umgekehrt, ehe die Mythologie vernünftig ist, muß sich der Philosoph ihrer schämen. So müssen endlich Aufgeklärte und Unaufgeklärte sich die Hand reichen, die Mythologie muß philosophisch werden und das Volk vernünftig, und die Philosophie muß mythologisch werden, um die Philosophen sinnlich zu machen. Dann herrscht ewige Einheit unter uns. Nimmer der verachtende Blick, nimmer das blinde Zittern des Volks vor seinen Weisen und Priestern. Dann erst erwartet uns \textit{gleiche} Ausbildung \textit{aller} Kräfte, des Einzelnen sowohl als aller Individuen. Keine Kraft wird mehr unterdrückt werden. Dann herrscht allgemeine Freiheit und Gleichheit der Geister! – Ein höherer Geist, vom Himmel gesandt, muß diese neue Religion unter uns stiften, sie wird das letzte, größte Werk der Menschheit sein.
+
+
+
+\end{document}
+
+
